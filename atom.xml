@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Rzy&#39;s Blog (*≧ω≦)</title>
-  <icon>https://www.gravatar.com/avatar/3d23846b08f2dcee56d1f5c6b9031724</icon>
+  <icon>https://www.gravatar.com/avatar/6821db044f83aac2131d0145c1441e92</icon>
   <subtitle>再菜也要努力爬</subtitle>
   <link href="http://yoursite-url/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>Rzy</name>
-    <email>hexo-theme-livemylife@gmail.com</email>
+    <email>rzy@tju.edu.cn</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
