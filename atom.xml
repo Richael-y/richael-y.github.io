@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Your Title</title>
+  <title>Rzy&#39;s Blog (*≧ω≦)</title>
   <icon>https://www.gravatar.com/avatar/3d23846b08f2dcee56d1f5c6b9031724</icon>
-  <subtitle>This is hexo theme</subtitle>
+  <subtitle>再菜也要努力爬</subtitle>
   <link href="http://yoursite-url/atom.xml" rel="self"/>
   
   <link href="http://yoursite-url/"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite-url/</id>
   
   <author>
-    <name>Your Name</name>
+    <name>Rzy</name>
     <email>hexo-theme-livemylife@gmail.com</email>
   </author>
   
