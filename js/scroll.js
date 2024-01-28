@@ -1,1 +1,0 @@
-$(window).scroll((function(){var e=(document.documentElement.scrollHeight||document.body.scrollHeight)-(document.documentElement.clientHeight||document.body.clientHeight),o=(document.documentElement.scrollTop||document.body.scrollTop)/e*100+"%";$("#progress > .line").css("width",o)}));

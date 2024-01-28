@@ -1,1 +1,0 @@
-document.getElementById("lang-select")&&document.getElementById("lang-select").addEventListener("change",(function(){var e=this.value,n=this.dataset.canonical,t=(n.split("/")[0],-1===n.indexOf("/")?0:n.indexOf("/")),i=n.substring(t);i=e+("index.html"===i?"/index.html":i),location.href=(location.origin+"/"+i).replace("index.html","")}));
