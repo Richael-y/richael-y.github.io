@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite-url/about/index.html</loc>
+    
+    <lastmod>2024-01-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/blogs/From-The-Very-Beginning/</loc>
+    
+    <lastmod>2024-01-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/tags/index.html</loc>
     
     <lastmod>2021-09-07</lastmod>
@@ -23,30 +37,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/cn/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite-url/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/about/index.html</loc>
-    
-    <lastmod>2016-04-20</lastmod>
     
   </url>
   
@@ -60,7 +53,7 @@
 
   
   <url>
-    <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://yoursite-url/tags/Introduction/</loc>
     <lastmod>2024-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -69,7 +62,7 @@
 
   
   <url>
-    <loc>http://yoursite-url/categories/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://yoursite-url/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%90%88%E9%9B%86/</loc>
     <lastmod>2024-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
