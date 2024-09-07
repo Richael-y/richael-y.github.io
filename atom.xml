@@ -6,7 +6,7 @@
   <link href="http://yoursite-url/atom.xml" rel="self"/>
   
   <link href="http://yoursite-url/"/>
-  <updated>2024-01-28T13:27:48.000Z</updated>
+  <updated>2024-09-07T17:09:02.000Z</updated>
   <id>http://yoursite-url/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>咕咕咕</title>
+    <link href="http://yoursite-url/blogs/%E5%92%95%E5%92%95%E5%92%95/"/>
+    <id>http://yoursite-url/blogs/%E5%92%95%E5%92%95%E5%92%95/</id>
+    <published>2024-09-07T17:09:02.000Z</published>
+    <updated>2024-09-07T17:09:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>果然 blog 虽迟但鸽 ：）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;果然 blog 虽迟但鸽 ：）&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="碎碎念合集" scheme="http://yoursite-url/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%90%88%E9%9B%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Interview Q&amp;A</title>
+    <link href="http://yoursite-url/blogs/Interview-Q-A/"/>
+    <id>http://yoursite-url/blogs/Interview-Q-A/</id>
+    <published>2024-03-31T13:21:33.000Z</published>
+    <updated>2024-03-31T13:21:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Q：信息收集如何处理子域名爆破的泛解析问题</strong></p><p>A：黑名单 ip / TTL(Time To Live) / 回显（响应内容）</p><p><strong>Q：如何绕过CDN查找真实ip</strong></p><p>A：</p><ol><li>验证CDN：超级ping / nslookup</li><li>绕过CDN：DNS / 微步 / tools.ipip.net / fofa / 根据回显人工判断（e.g. icon有唯一hash值）/ 境外主机访问解析 / 邮件订阅sendmail / F5 LTM负载均衡（CTF遇到过，通过对set-cookie关键字的解码真实ip也可被获取）</li></ol><p><strong>Q：phpinfo关注哪些信息</strong></p><p>A：</p><ol><li><p>php版本</p></li><li><p>系统版本信息</p></li><li><p>配置文件 php.ini 位置</p></li><li><p>Command（扩展功能）</p><p>Streams &amp; Filters（文件包含、反序列化、bypass）</p></li><li><p>Core：allow_url_fopen / allow_url_include / disable_functions / 调试的错误提示 / enable_dl（Apache 动态加载） / extension_dir（和enable_dl配合）/ include_path / open_basedir（文件读取）/ short_open_tag（写shell用，判断服务器是不是支持短标签）</p></li></ol><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">enable_d<span class="variable">l:</span></span><br><span class="line"></span><br><span class="line">该指令仅对 Apache 模块版本的 PHP 有效。 你可以针对每个虚拟机或每个目录开启或关闭 <span class="keyword">dl</span>() 动态加载 PHP 模块。</span><br><span class="line"></span><br><span class="line">关闭动态加载的主要原因是为了安全。通过动态加载，有可能忽略所有 open_basedir 限制。 默认允许动态加载，除了使用 安全模式。在安全模式，总是无法使用 <span class="keyword">dl</span>()。</span><br></pre></td></tr></table></figure><ol><li><p>phar</p></li><li><p>session：session.save_path / session.save_handler（用户自定义存储函数，如数据库）/ session.serialize_handler=php</p><p>（文件包含，CTF常见）</p></li><li><p>变量：_SERVER[‘PATH’]（windows特有，能显示出系统的所有环境变量）/ _SERVER[“SCRIPT_FILENAME”]（绝对路径，写shell用）/ _SERVER[“SERVER_ADDR”]（真实ip，直接绕过CDN）/ _FILES[“filename”]（文件包含getshell）</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;Q：信息收集如何处理子域名爆破的泛解析问题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A：黑名单 ip / TTL(Time To Live) / 回显（响应内容）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q：如何绕过CDN查找真实ip&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A：&lt;/</summary>
+      
+    
+    
+    
+    <category term="面经" scheme="http://yoursite-url/categories/%E9%9D%A2%E7%BB%8F/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo常用操作</title>
@@ -48,15 +96,15 @@
     <published>2024-01-28T12:35:32.000Z</published>
     <updated>2024-01-28T12:35:32.000Z</updated>
     
-    <content type="html"><![CDATA[<p>会点CTF，挖点小洞，做过攻防，备考一年技术退步了，努力把复健记录和笔记同步上来，争取不鸽（？）</p><p>随性写，随机更（。）</p><h3 id="博主有个无聊的灵魂-Terribly-Boring">博主有个无聊的灵魂 Terribly Boring</h3><p><img src="/img/blog_img/jct01.png" alt=""></p><p>放个小檀美照感谢阅读。</p>]]></content>
+    <content type="html"><![CDATA[<p>会点CTF，挖点小洞，做过攻防，备考一年技术退步了，努力把复健记录和笔记同步上来，争取不鸽（？）</p><p>随性写，随机更（。）</p><p><img src="/img/blog_img/jct01.png" alt=""></p><p>放个小檀美照感谢阅读。</p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;会点CTF，挖点小洞，做过攻防，备考一年技术退步了，努力把复健记录和笔记同步上来，争取不鸽（？）&lt;/p&gt;
 &lt;p&gt;随性写，随机更（。）&lt;/p&gt;
-&lt;h3 id=&quot;博主有个无聊的灵魂-Terribly-Boring&quot;&gt;博主有个无聊的灵魂 Terribly Boring&lt;/h3&gt;
-</summary>
+&lt;p&gt;&lt;img src=&quot;/img/blog_img/jct01.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;放个小檀美照感谢阅读。&lt;/</summary>
       
     
     

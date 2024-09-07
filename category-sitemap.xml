@@ -9,15 +9,22 @@
 
 
     <url>
-        <loc>http://yoursite-url/categories/Blog%25E7%25BB%25B4%25E6%258A%25A4/</loc>
-        <lastmod>2024-01-28T13:27:48.000Z</lastmod>
+        <loc>http://yoursite-url/categories/%25E7%25A2%258E%25E7%25A2%258E%25E5%25BF%25B5%25E5%2590%2588%25E9%259B%2586/</loc>
+        <lastmod>2024-09-07T17:09:02.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/categories/%25E7%25A2%258E%25E7%25A2%258E%25E5%25BF%25B5%25E5%2590%2588%25E9%259B%2586/</loc>
-        <lastmod>2024-01-28T12:35:32.000Z</lastmod>
+        <loc>http://yoursite-url/categories/%25E9%259D%25A2%25E7%25BB%258F/</loc>
+        <lastmod>2024-03-31T13:21:33.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/categories/Blog%25E7%25BB%25B4%25E6%258A%25A4/</loc>
+        <lastmod>2024-01-28T13:27:48.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

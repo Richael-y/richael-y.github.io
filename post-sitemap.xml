@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>http://yoursite-url/blogs/%E5%92%95%E5%92%95%E5%92%95/</loc>
+        <lastmod>2024-09-07T17:09:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/blogs/Interview-Q-A/</loc>
+        <lastmod>2024-03-31T13:21:33.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/blogs/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
         <lastmod>2024-01-28T13:27:48.000Z</lastmod>
         <changefreq>weekly</changefreq>
