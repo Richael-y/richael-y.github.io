@@ -23,7 +23,7 @@
     <published>2024-10-02T11:37:24.000Z</published>
     <updated>2024-10-02T11:37:24.000Z</updated>
     
-    <content type="html"><![CDATA[<p><em>记录一下优秀的 Attack 数据集，方便查找使用。</em></p><h2 id="MITRE-ATT-CK">MITRE ATT&amp;CK</h2><p>Description: Attack Framework, especially for APT, i.e. <strong>TTP</strong></p><p>Link:  <a href="https://attack.mitre.org/">https://attack.mitre.org/</a></p><p><img src="/img/blog_img/attackdb/attackdb_01.png" alt=""></p><h2 id="Automated-Tools-List">Automated Tools List</h2><p>Paper: Understanding Hackers’ Work</p><p>Link: <a href="https://dl.acm.org/doi/pdf/10.1145/3611643.3613900">https://dl.acm.org/doi/pdf/10.1145/3611643.3613900</a></p><p><img src="/img/blog_img/attackdb/attackdb_02.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p><em>记录一下优秀的 Attack 数据集，方便查找使用。</em></p><h2 id="MITRE-ATT-CK">MITRE ATT&amp;CK</h2><p>Description: Attack Framework, especially for APT, i.e. <strong>TTP</strong></p><p>Link:  <a href="https://attack.mitre.org/">https://attack.mitre.org/</a></p><p><img src="/img/blog_img/attackdb/attackdb_01.png" alt=""></p><h2 id="PTES">PTES</h2><p>Description: Penetration Test Guidance</p><p>Link: <a href="http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines">http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines</a></p><p><img src="/img/blog_img/attackdb/attackdb_02.png" alt=""></p><h2 id="Automated-Tools-List">Automated Tools List</h2><p>Paper: Understanding Hackers’ Work</p><p>Link: <a href="https://dl.acm.org/doi/pdf/10.1145/3611643.3613900">https://dl.acm.org/doi/pdf/10.1145/3611643.3613900</a></p><p><img src="/img/blog_img/attackdb/attackdb_03.png" alt=""></p>]]></content>
     
     
       
