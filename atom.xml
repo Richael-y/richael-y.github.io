@@ -23,13 +23,14 @@
     <published>2024-10-02T11:37:24.000Z</published>
     <updated>2024-10-02T11:37:24.000Z</updated>
     
-    <content type="html"><![CDATA[<p><em>记录一下优秀的 Attack 数据集，方便查找使用。</em></p><h2 id="MITRE-ATT-amp-CK"><a href="#MITRE-ATT-amp-CK" class="headerlink" title="MITRE ATT&amp;CK"></a>MITRE ATT&amp;CK</h2><p>Description: Attack Framework, especially for APT, i.e. <strong>TTP</strong></p><p>Link:  <a href="https://attack.mitre.org/">https://attack.mitre.org/</a></p><p><img src="/img/blog_img/attackdb/attackdb_01.png" alt="attackdb_01.png" style="zoom:50%;" /></p><h2 id="PTES"><a href="#PTES" class="headerlink" title="PTES"></a>PTES</h2><p>Description: Penatration Test Guidance</p><p>Link: <a href="http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines">http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines</a></p><p><img src="/img/blog_img/attackdb/attackdb_02.png" alt="attackdb_01.png" style="zoom:50%;" /></p><h2 id="Automated-Tools-List"><a href="#Automated-Tools-List" class="headerlink" title="Automated Tools List"></a>Automated Tools List</h2><p>Paper: Understanding Hackers’ Work</p><p>Link: <a href="https://dl.acm.org/doi/pdf/10.1145/3611643.3613900">https://dl.acm.org/doi/pdf/10.1145/3611643.3613900</a></p><p><img src="/img/blog_img/attackdb/attackdb_03.png" alt="attackdb_01.png" style="zoom:50%;" /></p>]]></content>
+    <content type="html"><![CDATA[<p><em>记录一下优秀的 Attack 数据集，方便查找使用。</em></p><h2 id="MITRE-ATT-CK">MITRE ATT&amp;CK</h2><p>Description: Attack Framework, especially for APT, i.e. <strong>TTP</strong></p><p>Link:  <a href="https://attack.mitre.org/">https://attack.mitre.org/</a></p><img src="/img/blog_img/attackdb/attackdb_01.png" style="zoom:50%;" /><h2 id="PTES">PTES</h2><p>Description: Penatration Test Guidance</p><p>Link: <a href="http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines">http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines</a></p><img src="/img/blog_img/attackdb/attackdb_02.png" style="zoom:25%;" /><h2 id="Automated-Tools-List">Automated Tools List</h2><p>Paper: Understanding Hackers’ Work</p><p>Link: <a href="https://dl.acm.org/doi/pdf/10.1145/3611643.3613900">https://dl.acm.org/doi/pdf/10.1145/3611643.3613900</a></p><img src="/img/blog_img/attackdb/attackdb_03.png" style="zoom:50%;" />]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;&lt;em&gt;记录一下优秀的 Attack 数据集，方便查找使用。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;MITRE-ATT-amp-CK&quot;&gt;&lt;a href=&quot;#MITRE-ATT-amp-CK&quot; class=&quot;headerlink&quot; title=&quot;MITRE ATT&amp;amp;CK&quot;</summary>
+&lt;h2 id=&quot;MITRE-ATT-CK&quot;&gt;MITRE ATT&amp;amp;CK&lt;/h2&gt;
+&lt;p&gt;Description: Attack Framework, especially for APT,</summary>
       
     
     
