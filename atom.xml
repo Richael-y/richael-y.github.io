@@ -17,19 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>PromptEngineeringGuidance</title>
+    <title>Prompt Engineering Guidance</title>
     <link href="http://yoursite-url/blogs/PromptEngineeringGuidance/"/>
     <id>http://yoursite-url/blogs/PromptEngineeringGuidance/</id>
     <published>2024-11-06T12:55:59.000Z</published>
     <updated>2024-11-06T12:55:59.000Z</updated>
     
-    <content type="html"><![CDATA[<p><del>从0到1的PromptEngineering之旅hhhh</del></p><p><em>一点碎碎念：research的过程中刚好遇到了 <code>prompt设计需要标准背书</code> 的问题，正好借这个机会系统入门一下，把还不错的参考资料整理到这里方便使用，或许以后也可以成为其他人的入门指南 ;-)</em> </p><ol><li><p>很好的入门项目 <a href="https://gptpmt.com/">https://gptpmt.com/</a></p></li><li><p>openai官方文档 <a href="https://platform.openai.com/docs/guides/prompt-engineering">https://platform.openai.com/docs/guides/prompt-engineering</a></p></li><li>Openai官方出的Tokenizer，很好的token分解&amp;计数器 <a href="https://platform.openai.com/tokenizer">https://platform.openai.com/tokenizer</a></li></ol><p>&lt;未完待续……&gt;</p>]]></content>
+    <content type="html"><![CDATA[<p><s>从0到1的PromptEngineering之旅hhhh</s></p><p><em>一点碎碎念：research的过程中刚好遇到了prompt设计需要标准背书的问题，正好借这个机会系统入门一下，把还不错的参考资料整理到这里方便使用，或许以后也可以成为其他人的入门指南 ;-)</em></p><ol><li><p>很好的入门项目 <a href="https://gptpmt.com/">https://gptpmt.com/</a></p></li><li><p>openai官方文档 <a href="https://platform.openai.com/docs/guides/prompt-engineering">https://platform.openai.com/docs/guides/prompt-engineering</a></p></li><li><p>Openai官方出的Tokenizer，很好的token分解&amp;计数器 <a href="https://platform.openai.com/tokenizer">https://platform.openai.com/tokenizer</a></p></li></ol><p>&lt;未完待续……&gt;</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;del&gt;从0到1的PromptEngineering之旅hhhh&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;一点碎碎念：research的过程中刚好遇到了 &lt;code&gt;prompt设计需要标准背书&lt;/code&gt; 的问题，正好借这个机会系统入门一下，把还不错的参考资料整理到这里方便</summary>
+    <summary type="html">&lt;p&gt;&lt;s&gt;从0到1的PromptEngineering之旅hhhh&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;一点碎碎念：research的过程中刚好遇到了prompt设计需要标准背书的问题，正好借这个机会系统入门一下，把还不错的参考资料整理到这里方便使用，或许以后也可以成为其他人的入门指</summary>
       
     
     
