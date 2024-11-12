@@ -23,7 +23,7 @@
     <published>2024-11-12T12:48:35.000Z</published>
     <updated>2024-11-12T12:48:35.000Z</updated>
     
-    <content type="html"><![CDATA[<p><em>测试过程中发现了新的花活，好玩，记录一下</em></p><ol><li><p>信息搜集查版本：可以通过更新来看有没有关于目前版本的提示</p><p>e.g.  <code>/api/adminUser/checkUpdate</code></p><p><img src="/img/blog_img/pentesttricks/pentesttricks_01.png" alt="pentesttricks_01" style="zoom:50%;" /></p></li></ol>]]></content>
+    <content type="html"><![CDATA[<p><em>测试过程中发现了新的花活，好玩，记录一下</em></p><ol><li><p>信息搜集查版本：可以通过更新来看有没有关于目前版本的提示</p><p>e.g.  <code>/api/adminUser/checkUpdate</code></p><p><img src="/img/blog_img/pentesttricks/pentesttricks_01.png" style="zoom:75%;" /></p></li></ol>]]></content>
     
     
       
