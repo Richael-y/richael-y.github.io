@@ -45,19 +45,18 @@
   </entry>
   
   <entry>
-    <title>Prompt Engineering Guidance</title>
-    <link href="http://yoursite-url/blogs/PromptEngineeringGuidance/"/>
-    <id>http://yoursite-url/blogs/PromptEngineeringGuidance/</id>
+    <title>Things need to know for LLM</title>
+    <link href="http://yoursite-url/blogs/ThingsNeed2Know4LLM/"/>
+    <id>http://yoursite-url/blogs/ThingsNeed2Know4LLM/</id>
     <published>2024-11-06T12:55:59.000Z</published>
     <updated>2024-11-06T12:55:59.000Z</updated>
     
-    <content type="html"><![CDATA[<p><s>从0到1的PromptEngineering之旅hhhh</s></p><p><em>一点碎碎念：research的过程中刚好遇到了prompt设计需要标准背书的问题，正好借这个机会系统入门一下，把还不错的参考资料整理到这里方便使用，或许以后也可以成为其他人的入门指南 ;-)</em></p><ol><li><p>很好的入门项目 <a href="https://gptpmt.com/">https://gptpmt.com/</a></p></li><li><p>openai官方文档 <a href="https://platform.openai.com/docs/guides/prompt-engineering">https://platform.openai.com/docs/guides/prompt-engineering</a></p></li><li><p>Openai官方出的Tokenizer，很好的token分解&amp;计数器 <a href="https://platform.openai.com/tokenizer">https://platform.openai.com/tokenizer</a></p></li></ol><p>&lt;未完待续……&gt;</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Prompt-Engineering"><a href="#Prompt-Engineering" class="headerlink" title="Prompt Engineering"></a>Prompt Engineering</h2><p><del>从0到1的PromptEngineering之旅hhhh</del></p><p><em>一点碎碎念：research的过程中刚好遇到了prompt设计需要标准背书的问题，正好借这个机会系统入门一下，把还不错的参考资料整理到这里方便使用，或许以后也可以成为其他人的入门指南 ;-)</em> </p><ol><li><p>很好的入门项目 <a href="https://gptpmt.com/">https://gptpmt.com/</a></p></li><li><p>openai官方文档 <a href="https://platform.openai.com/docs/guides/prompt-engineering">https://platform.openai.com/docs/guides/prompt-engineering</a></p></li><li>Openai官方出的Tokenizer，很好的token分解&amp;计数器 <a href="https://platform.openai.com/tokenizer">https://platform.openai.com/tokenizer</a></li></ol><p>&lt;未完待续……&gt;</p><h2 id="LLM-Evaluation"><a href="#LLM-Evaluation" class="headerlink" title="LLM Evaluation"></a>LLM Evaluation</h2><p><em>感恩：</em> <a href="https://github.com/modelscope/modelscope-classroom/blob/main/LLM-tutorial/K.%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%8A%A8%E8%AF%84%E4%BC%B0%E7%90%86%E8%AE%BA%E5%92%8C%E5%AE%9E%E6%88%98--LLM%20Automatic%20Evaluation.md">https://github.com/modelscope/modelscope-classroom/blob/main/LLM-tutorial/K.%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%8A%A8%E8%AF%84%E4%BC%B0%E7%90%86%E8%AE%BA%E5%92%8C%E5%AE%9E%E6%88%98--LLM%20Automatic%20Evaluation.md</a></p><p>&lt;未完待续……&gt;</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;s&gt;从0到1的PromptEngineering之旅hhhh&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;一点碎碎念：research的过程中刚好遇到了prompt设计需要标准背书的问题，正好借这个机会系统入门一下，把还不错的参考资料整理到这里方便使用，或许以后也可以成为其他人的入门指</summary>
+    <summary type="html">&lt;h2 id=&quot;Prompt-Engineering&quot;&gt;&lt;a href=&quot;#Prompt-Engineering&quot; class=&quot;headerlink&quot; title=&quot;Prompt Engineering&quot;&gt;&lt;/a&gt;Prompt Engineering&lt;/h2&gt;&lt;p&gt;&lt;del&gt;从</summary>
       
     
     
@@ -65,7 +64,7 @@
     <category term="research" scheme="http://yoursite-url/categories/research/"/>
     
     
-    <category term="prompt" scheme="http://yoursite-url/tags/prompt/"/>
+    <category term="LLM" scheme="http://yoursite-url/tags/LLM/"/>
     
   </entry>
   
