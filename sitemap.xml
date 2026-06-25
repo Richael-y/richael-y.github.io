@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/PenTest-Tricks/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/ThingsNeed2Know4LLM/</loc>
+    
+    <lastmod>2024-11-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/PromptAirlineWP/</loc>
+    
+    <lastmod>2024-11-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/Attack-Database/</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/%E5%92%95%E5%92%95%E5%92%95/</loc>
+    
+    <lastmod>2024-09-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/Interview-Q-A/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    
+    <lastmod>2024-01-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/Intro/</loc>
+    
+    <lastmod>2024-01-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/CNVD-2023-4**41/</loc>
+    
+    <lastmod>2023-06-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/linux%E4%BA%A4%E4%BA%92shell/</loc>
+    
+    <lastmod>2023-05-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/CNVD-2023-3**48/</loc>
+    
+    <lastmod>2023-04-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/CNVD-2023-3**63/</loc>
+    
+    <lastmod>2023-04-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/blogs/TP5-0-12-RCE/</loc>
+    
+    <lastmod>2021-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/index.html</loc>
+    
+    <lastmod>2021-09-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/index.html</loc>
+    
+    <lastmod>2021-09-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/404.html</loc>
+    
+    <lastmod>2021-09-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/archive/index.html</loc>
+    
+    <lastmod>2017-03-20</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://richael-y.github.io/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/llm4sec/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/cnvd/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/hexo/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/Introduction/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/tricks/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/prompt/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/ThinkPHP/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/linux/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/tags/LLM/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/research/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/CNVD/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/Blog%E7%BB%B4%E6%8A%A4/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/%E9%9D%A2%E7%BB%8F/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%90%88%E9%9B%86/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/Pentest/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/writeup/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richael-y.github.io/categories/linux%E6%8F%90%E6%9D%83/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>
