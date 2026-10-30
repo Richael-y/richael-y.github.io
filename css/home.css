@@ -97,16 +97,17 @@ footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 36
   nav { gap: 20px; }
   h1 span { font-size: 21px; }
   .hero-content { padding: 78px 0 65px; }
-  .publication { column-gap: 18px; }
+  .publication { display: block; }
+  .entry-heading { flex-wrap: wrap; gap: 4px 20px; }
 }
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .site-header, .hero-content, footer { width: calc(100% - 40px); }
   .site-header { min-height: 0; padding: 22px 0 16px; }
-  nav { width: 100%; justify-content: space-between; gap: 10px; }
+  nav { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 4px 10px; }
   nav a { font-size: 14px; padding-block: 6px; }
   .hero { background-position: 57% center; }
   .hero-content { padding: 61px 0 55px; }
-  h1 { font-size: 38px; }
+  h1 { font-size: clamp(32px, 9vw, 38px); }
   h1 span { font-size: 20px; }
   .affiliation { font-size: 16px; margin-top: 22px; }
   main { width: calc(100% - 40px); }
@@ -115,14 +116,23 @@ footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 36
   .section > h2 { font-size: 28px; margin-bottom: 0; }
   .biography { font-size: 16px; line-height: 1.85; }
   .publication { display: block; padding-block: 22px; }
-  .publication h3 { font-size: 18px; }
+  .publication h3 { font-size: 18px; overflow-wrap: anywhere; }
   .paper-links { margin-top: 9px; }
   .entry-heading { display: block; }
   .entry-heading > span { display: block; margin-top: 3px; }
   .education-entry p { margin-top: 5px; }
   .awards { padding-left: 12px; }
   .awards li { flex-direction: column; gap: 2px; }
+  .awards li > :last-child { flex-shrink: 1; }
+  .writing a { min-width: 0; overflow-wrap: anywhere; }
+  .writing time { flex-shrink: 0; }
   .competition-more { padding-left: 12px; }
 
+}
+@media (pointer: coarse) {
+  nav a, .contact a, .paper-links a, .archive-link { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+  .writing a { display: flex; align-items: center; min-height: 44px; }
+  .writing li { align-items: baseline; }
+  .competition-group summary { min-height: 48px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
