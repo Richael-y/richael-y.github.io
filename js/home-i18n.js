@@ -48,7 +48,6 @@
     footer: '© 2026 杨若钊'
   };
 
-  var KEY = 'home-lang';
   var textNodes = document.querySelectorAll('[data-i18n]');
   var ariaNodes = document.querySelectorAll('[data-i18n-aria]');
   var meta = document.querySelector('meta[name="description"]');
@@ -81,19 +80,13 @@
     }
   }
 
-  function saved() {
-    try { return localStorage.getItem(KEY); } catch (e) { return null; }
-  }
-
-  // English by default; Chinese only if the visitor chose it before.
-  var current = saved() === 'zh' ? 'zh' : 'en';
-  if (current === 'zh') apply('zh');
+  // Every visit starts in English; the choice is not remembered.
+  var current = 'en';
 
   if (button) {
     button.addEventListener('click', function () {
       current = current === 'zh' ? 'en' : 'zh';
       apply(current);
-      try { localStorage.setItem(KEY, current); } catch (e) { /* private mode */ }
     });
   }
 })();
