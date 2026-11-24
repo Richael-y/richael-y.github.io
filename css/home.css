@@ -27,6 +27,9 @@ footer { width: min(900px, calc(100% - 96px)); margin-inline: auto; }
 .site-header { display: flex; align-items: center; justify-content: flex-end; gap: 30px; min-height: 78px; }
 nav { display: flex; gap: 30px; }
 nav a { color: #eeeee8; font-size: 15px; padding-block: 12px; text-shadow: 0 1px 8px #13201b; }
+.lang-toggle { appearance: none; background: none; border: 0; border-left: 1px solid #eeeee866; margin: 0; padding: 0 0 0 20px; align-self: center; color: #eeeee8; font: inherit; font-size: 15px; line-height: 1.2; text-shadow: 0 1px 8px #13201b; cursor: pointer; }
+.lang-toggle:hover { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.lang-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
 .hero-content { padding: 112px 0 100px; text-shadow: 0 2px 16px #0005; }
 h1 { font: 400 clamp(36px, 3.7vw, 48px)/1.2 var(--serif); letter-spacing: -.5px; }
 h1 span { display: block; font: 400 21px/1.5 'Songti SC', 'SimSun', serif; letter-spacing: 4px; margin-top: 12px; color: #e0dfd3; }
@@ -84,6 +87,7 @@ h3 { font-size: 17px; font-weight: 600; line-height: 1.55; }
 .competition-more { padding: 3px 0 18px 20px; color: var(--muted); }
 .writing li:first-child { padding-top: 0; }
 .writing a { color: var(--ink); }
+.services li > :last-child { color: var(--muted); font-size: 15px; text-align: right; }
 .writing time { color: var(--muted); font-size: 15px; font-variant-numeric: tabular-nums; }
 .archive-link { display: inline-block; margin-top: 20px; font-size: 15px; }
 footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 36px; color: var(--muted); font-size: 14px; }
@@ -105,6 +109,7 @@ footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 36
   .site-header { min-height: 0; padding: 22px 0 16px; }
   nav { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 4px 10px; }
   nav a { font-size: 14px; padding-block: 6px; }
+  .lang-toggle { font-size: 14px; padding-left: 10px; }
   .hero { background-position: 57% center; }
   .hero-content { padding: 61px 0 55px; }
   h1 { font-size: clamp(32px, 9vw, 38px); }
@@ -130,7 +135,7 @@ footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 36
 
 }
 @media (pointer: coarse) {
-  nav a, .contact a, .paper-links a, .archive-link { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+  nav a, .lang-toggle, .contact a, .paper-links a, .archive-link { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
   .writing a { display: flex; align-items: center; min-height: 44px; }
   .writing li { align-items: baseline; }
   .competition-group summary { min-height: 48px; }

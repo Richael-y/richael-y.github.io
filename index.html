@@ -6,43 +6,58 @@
   <title>Ruozhao Yang · Computer Security Research</title>
   <meta name="description" content="Ruozhao Yang (杨若钊), Ph.D. student at Singapore Management University. Research in automated penetration testing, web security, and LLM agents.">
   <link rel="icon" href="/img/avatar/avatar.jpg">
-  <link rel="stylesheet" href="/css/home.css?v=9">
+  <link rel="stylesheet" href="/css/home.css?v=11">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
   <header class="hero" aria-labelledby="name">
     <div class="site-header">
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#pubs">Research</a><a href="#education">Education</a><a href="#ctf">CTF</a><a href="/blog/">Blog</a>
+      <nav aria-label="Main navigation" data-i18n-aria="navLabel">
+        <a href="#about" data-i18n="navAbout">About</a><a href="#education" data-i18n="navEducation">Education</a><a href="#pubs" data-i18n="navResearch">Research</a><a href="#ctf">CTF</a><a href="/blog/" data-i18n="navBlog">Blog</a><button type="button" class="lang-toggle" id="lang-toggle" lang="zh" aria-label="切换到中文">中文</button>
       </nav>
     </div>
     <div class="hero-content">
       <h1 id="name">Ruozhao Yang <span lang="zh">杨若钊</span></h1>
-      <p class="affiliation">Ph.D. Student in Computer Science<br>Singapore Management University</p>
-      <div class="contact"><a href="mailto:ruozhaoyang@gmail.com">Email</a><a href="https://github.com/Richael-y">GitHub</a></div>
+      <p class="affiliation" data-i18n="affiliation">Ph.D. Student in Computer Science<br>Singapore Management University</p>
+      <div class="contact"><a href="mailto:ruozhaoyang@gmail.com" data-i18n="email">Email</a><a href="https://github.com/Richael-y">GitHub</a></div>
     </div>
   </header>
   <main id="main">
     <section class="section about" id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
+      <h2 id="about-heading" data-i18n="aboutHeading">About</h2>
       <div class="section-body biography">
-        <p>I’m a Ph.D. student in Computer Science at Singapore Management University, advised by Prof. Xiaofei Xie. My research focuses on <strong>automated penetration testing, black-box web security testing, and LLM agents</strong>.</p>
-        <p>My research builds on hands-on experience in CTF competitions, attack-and-defense exercises, and real-world penetration testing.</p>
+        <p data-i18n="about1">I’m a Ph.D. student in Computer Science at Singapore Management University, advised by Prof. <a href="https://xiaofeixie.bitbucket.io/">Xiaofei Xie</a>. My research focuses on <strong>automated penetration testing, black-box web security testing, and LLM agents</strong>.</p>
+        <p data-i18n="about2">My research builds on hands-on experience in CTF competitions, attack-and-defense exercises, and real-world penetration testing.</p>
+      </div>
+    </section>
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading" data-i18n="educationHeading">Education</h2>
+      <div class="section-body">
+        <article class="education-entry">
+          <div class="entry-heading"><h3 data-i18n="smu">Singapore Management University</h3><span data-i18n="smuDates">2025–Present</span></div>
+          <p data-i18n="phd">Ph.D. in Computer Science</p>
+          <p class="secondary" data-i18n="smuAdvisor">Advisor: Prof. <a href="https://xiaofeixie.bitbucket.io/">Xiaofei Xie</a></p>
+        </article>
+        <article class="education-entry">
+          <div class="entry-heading"><h3 data-i18n="tju">Tianjin University</h3><span>2020–2024</span></div>
+          <p data-i18n="beng">B.Eng. in Computer Science and Technology</p>
+          <p class="secondary" data-i18n="tjuThesis">Thesis: Visual Analysis Model of APT Attack Samples<br>Advisor: Prof. <a href="https://cse.tju.edu.cn/faculty/luotao/index.html">Tao Luo</a></p>
+        </article>
       </div>
     </section>
     <section class="section" id="pubs" aria-labelledby="research-heading">
-      <h2 id="research-heading">Research</h2>
+      <h2 id="research-heading" data-i18n="researchHeading">Research</h2>
       <div class="section-body publications">
 <article class="publication accepted">
           <h3><a href="https://arxiv.org/abs/2512.14233">PentestEval: Benchmarking LLM-based Penetration Testing with Modular and Stage-Level Design</a></h3>
           <p class="authors"><strong>Ruozhao Yang</strong>, Mingfei Cheng, Gelei Deng, Tianwei Zhang, Junjie Wang, Xiaofei Xie</p>
-          <p class="venue">IEEE Transactions on Information Forensics and Security · 2026 · Accepted</p>
-          <div class="paper-links"><a href="https://arxiv.org/abs/2512.14233">arXiv</a><a href="https://github.com/Richael-y/PentestEval">Code</a></div>
+          <p class="venue" data-i18n="venueTifs">IEEE Transactions on Information Forensics and Security · 2026 · Accepted</p>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2512.14233">arXiv</a><a href="https://github.com/Richael-y/PentestEval" data-i18n="code">Code</a></div>
         </article>
 <article class="publication accepted">
           <h3><a href="https://dl.acm.org/doi/abs/10.1145/3844178.3844643">RepoTune: Co-evolving Vulnerability Detection with a Repository’s Genome</a></h3>
           <p class="authors">Yuqiang Sun, <strong>Ruozhao Yang</strong>, Ying Li</p>
-          <p class="venue">FSE · SWGeno 2026 · 2nd International Workshop on Software Genomics</p>
+          <p class="venue" data-i18n="venueSwgeno">ASE · SWGeno 2026 · 2nd International Workshop on Software Genomics</p>
           <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3844178.3844643">ACM Digital Library</a></div>
         </article>
 <article class="publication">
@@ -77,28 +92,25 @@
         </article>
       </div>
     </section>
-    <section class="section" id="education" aria-labelledby="education-heading">
-      <h2 id="education-heading">Education</h2>
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading" data-i18n="servicesHeading">Professional Services</h2>
       <div class="section-body">
-        <article class="education-entry">
-          <div class="entry-heading"><h3>Singapore Management University</h3><span>2025–Present</span></div>
-          <p>Ph.D. in Computer Science</p>
-          <p class="secondary">Advisor: Prof. Xiaofei Xie</p>
-        </article>
-        <article class="education-entry">
-          <div class="entry-heading"><h3>Tianjin University</h3><span>2020–2024</span></div>
-          <p>B.Eng. in Computer Science and Technology</p>
-          <p class="secondary">Thesis: Visual Analysis Model of APT Attack Samples<br>Advisor: Prof. Tao Luo</p>
-        </article>
+        <ul class="writing services">
+          <li><span>AGENT 2027</span><span data-i18n="rolePc">Program Committee</span></li>
+          <li><span>MSR 2027</span><span data-i18n="roleJuniorPc">Junior Program Committee</span></li>
+          <li><span>WWW 2027</span><span data-i18n="rolePc">Program Committee</span></li>
+          <li><span>ACM CCS 2026</span><span data-i18n="roleAe">Artifact Evaluation Committee</span></li>
+          <li><span>ACM CCS 2025</span><span data-i18n="roleAe">Artifact Evaluation Committee</span></li>
+        </ul>
       </div>
     </section>
     <section class="section" id="ctf" aria-labelledby="ctf-heading">
       <h2 id="ctf-heading">CTF</h2>
       <div class="section-body">
-        <p class="ctf-intro">Web security competitor. Captain of <strong>D.I.E</strong>, Tianjin University’s official team (2022–2024); core member of <strong>Dest0g3</strong> (2021–2023); co-founder of <strong>TTT-team</strong> (2021).</p>
+        <p class="ctf-intro" data-i18n="ctfIntro">Web security competitor. Captain of <strong>D.I.E</strong>, Tianjin University’s official team (2022–2024); core member of <strong>Dest0g3</strong> (2021–2023); co-founder of <strong>TTT-team</strong> (2021).</p>
         <details class="competition-group">
-          <summary>Domestic competitions</summary>
-        <ul class="awards" aria-label="Domestic competition results">
+          <summary data-i18n="domestic">Domestic competitions</summary>
+        <ul class="awards" aria-label="Domestic competition results" data-i18n-aria="domesticLabel">
           <li><span lang="zh">第四届“第五空间”网络安全大赛</span><strong lang="zh">冠军</strong></li>
           <li><span lang="zh">第四届“长城杯”信息安全铁人三项赛</span><strong lang="zh">一等奖（亚军）</strong></li>
           <li><span lang="zh">第十五届全国大学生信息安全竞赛</span><strong lang="zh">国家级二等奖</strong></li>
@@ -106,24 +118,25 @@
         <p class="competition-more" lang="zh">等</p>
         </details>
         <details class="competition-group">
-          <summary>International competitions</summary>
-        <ul class="awards international" aria-label="International competition results"><li><span>7th XCTF Finals</span><span>2nd Prize</span></li><li><span>SUSCTF — Meritorious Winner</span><span>4 / 308</span></li><li><span>SCTF</span><span>6 / 206</span></li><li><span>L3HCTF</span><span>10 / 275</span></li><li><span>*CTF</span><span>13 / 372</span></li><li><span>Azure Assassin Alliance CTF</span><span>26 / 310</span></li><li><span>BSidesNoida CTF</span><span>26 / 411</span></li><li><span>RCTF</span><span>34 / 363</span></li><li><span>CyBRICS 2021</span><span>44 / 482</span></li><li><span>Real World CTF 4th</span><span>68 / 947</span></li></ul>
+          <summary data-i18n="international">International competitions</summary>
+        <ul class="awards international" aria-label="International competition results" data-i18n-aria="internationalLabel"><li><span data-i18n="xctf">7th XCTF Finals</span><span data-i18n="secondPrize">2nd Prize</span></li><li><span>SUSCTF — Meritorious Winner</span><span>4 / 308</span></li><li><span>SCTF</span><span>6 / 206</span></li><li><span>L3HCTF</span><span>10 / 275</span></li><li><span>*CTF</span><span>13 / 372</span></li><li><span>Azure Assassin Alliance CTF</span><span>26 / 310</span></li><li><span>BSidesNoida CTF</span><span>26 / 411</span></li><li><span>RCTF</span><span>34 / 363</span></li><li><span>CyBRICS 2021</span><span>44 / 482</span></li><li><span>Real World CTF 4th</span><span>68 / 947</span></li><li><span data-i18n="geely">GEELY Global Automotive Cybersecurity Challenge 2026 (Singapore)</span><span data-i18n="grandPrize">Grand Prize</span></li></ul>
         <p class="competition-more">...</p>
         </details>
       </div>
     </section>
     <section class="section" id="blog" aria-labelledby="writing-heading">
-      <h2 id="writing-heading">Writing</h2>
+      <h2 id="writing-heading" data-i18n="writingHeading">Blogs</h2>
       <div class="section-body">
         <ul class="writing">
-          <li><a href="/blogs/PromptAirlineWP/">Prompt Airline — Walkthrough</a><time datetime="2024-11">2024</time></li>
-          <li><a href="/blogs/ThingsNeed2Know4LLM/">Things to Know for LLM</a><time datetime="2024-11">2024</time></li>
+          <li><a href="/blogs/PromptAirlineWP/" data-i18n="postAirline">Prompt Airline — Walkthrough</a><time datetime="2024-11">2024</time></li>
+          <li><a href="/blogs/ThingsNeed2Know4LLM/" data-i18n="postLlm">Things to Know for LLM</a><time datetime="2024-11">2024</time></li>
           <li><a href="/blogs/TP5-0-12-RCE/">ThinkPHP V5.0.12 RCE</a><time datetime="2021-11">2021</time></li>
         </ul>
-        <a class="archive-link" href="/blog/">All posts <span aria-hidden="true">↗</span></a>
+        <a class="archive-link" href="/blog/"><span data-i18n="allPosts">All posts</span> <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
-  <footer>© 2026 Ruozhao Yang</footer>
+  <footer data-i18n="footer">© 2026 Ruozhao Yang</footer>
+  <script src="/js/home-i18n.js?v=4"></script>
 </body>
 </html>
