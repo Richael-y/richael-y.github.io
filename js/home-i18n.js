@@ -85,10 +85,8 @@
     try { return localStorage.getItem(KEY); } catch (e) { return null; }
   }
 
-  var current = saved();
-  if (current !== 'zh' && current !== 'en') {
-    current = /^zh\b/i.test(navigator.language || '') ? 'zh' : 'en';
-  }
+  // English by default; Chinese only if the visitor chose it before.
+  var current = saved() === 'zh' ? 'zh' : 'en';
   if (current === 'zh') apply('zh');
 
   if (button) {
